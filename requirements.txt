@@ -1,0 +1,44 @@
+# 核心框架
+Django==5.0.14
+asgiref==3.9.1
+sqlparse==0.5.3
+pytz==2025.2
+
+# REST框架相关
+djangorestframework==3.16.1
+djangorestframework-simplejwt==5.3.1
+pyjwt==2.8.0
+
+# 文档相关
+drf-yasg==1.21.7
+coreapi==2.3.3
+coreschema==0.0.4
+uritemplate==4.2.0
+
+# 功能增强
+django-cors-headers==4.4.0
+python-dotenv==1.1.1
+django-simple-captcha==0.6.2
+Pillow==11.3.0
+django-filter==25.1
+
+# 测试相关
+pytest==8.0.2
+pytest-django==4.8.0
+pytest-cov==6.2.1
+pytest-html==4.1.1
+pytest-metadata==3.1.1
+pytest-xdist==3.8.0
+
+# 定时任务相关
+celery==5.3.6
+redis==5.0.3
+django-celery-beat==2.6.0
+
+# WebSocket相关
+channels==4.1.0
+channels-redis==4.1.0
+daphne==4.1.2
+
+# 系统监控相关
+psutil==7.1.0

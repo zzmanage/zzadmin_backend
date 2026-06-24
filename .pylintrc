@@ -1,0 +1,35 @@
+[MAIN]
+ignore = 
+    __pycache__,
+    *.pyc,
+    *.pyo,
+    .git,
+    .tox,
+    dist,
+    build,
+    venv,
+    node_modules,
+    migrations,
+    *.egg-info
+
+[MESSAGES CONTROL]
+disable = 
+    missing-docstring,
+    too-few-public-methods,
+    no-self-use,
+    broad-except,
+    consider-using-f-string,
+    useless-object-inheritance
+
+[FORMAT]
+max-line-length = 120
+
+[TYPECHECK]
+ignore-modules = django, rest_framework
+generated-members = objects.*
+
+[DESIGN]
+max-args = 10
+max-locals = 25
+max-returns = 6
+max-branches = 12

@@ -1,0 +1,74 @@
+[project]
+name = "backend-management-system"
+version = "0.1.0"
+description = "Backend management system for user, department, role and permission management"
+authors = [
+    {name = "zhengze",email = "zhengze@sina.com.cn"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    # 核心框架
+    "Django==5.2.5",
+    "asgiref==3.9.1",
+    "sqlparse==0.5.3",
+    "pytz==2025.2",
+    
+    # REST框架相关
+    "djangorestframework==3.16.1",
+    "djangorestframework-simplejwt==5.3.1",
+    "pyjwt==2.8.0",
+    
+    # 文档相关
+    "drf-yasg==1.21.7",
+    "coreapi==2.3.3",
+    "coreschema==0.0.4",
+    "uritemplate==4.2.0",
+    
+    # 功能增强
+    "django-cors-headers==4.4.0",
+    "python-dotenv==1.1.1",
+    "django-simple-captcha==0.6.2",
+    "Pillow==11.3.0",
+    
+    # 系统监控相关
+    "psutil==7.1.0",
+    
+    # 数据验证和序列化
+    "pydantic>=2.0.0,<3.0.0",
+    
+    # Redis缓存
+    "django-redis>=5.0.0,<6.0.0",
+    "redis>=5.0.0,<6.0.0",
+    
+    # 请求限流
+    "django-ratelimit>=3.0.0,<4.0.0",
+    
+    # 异步支持
+    "aiohttp>=3.9.0,<4.0.0",
+    
+    # 工具库
+    "python-dateutil>=2.8.0,<3.0.0",
+    "six>=1.16.0,<2.0.0"
+]
+
+[tool.poetry]
+# 禁用包模式，只用于依赖管理
+package-mode = false
+
+[tool.poetry.group.dev.dependencies]
+# 测试相关
+pytest = "==8.0.2"
+# 代码格式化和质量检查
+isort = ">=6.0.1,<7.0.0"
+autopep8 = ">=2.3.2,<3.0.0"
+flake8 = ">=7.3.0,<8.0.0"
+pytest-django = "==4.8.0"
+pytest-cov = "==6.2.1"
+pytest-html = "==4.1.1"
+pytest-metadata = "==3.1.1"
+pytest-xdist = "==3.8.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
